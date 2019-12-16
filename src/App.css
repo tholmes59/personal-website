@@ -1,32 +1,174 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  box-sizing: border-box;
+  /* background: url("assets/san-francisco-free-photo-picjumbo-com.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+html {
+  background: url("assets/san-francisco-free-photo-picjumbo-com.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+.body {
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  height: 100%; 
+/*   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* ******** Navbar *********** */
+
+nav {
+  max-width: 100%;
+  /* background-color: rgb(49, 3, 3); */
+  padding-left: 30px;
+  padding-right: 10px;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1px;
+  font-size: .85em;
+  /* overflow: hidden; */
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item:hover {
+  background-color: white;
 }
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+/* ********* Home *********** */
+
+.home-container {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  z-index: 1;
+	background: inherit;
+	overflow: hidden;
+}
+
+.home-container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.home {
+  margin: 30px;
+}
+
+.home h1 {
+  /* color: Pink;  */
+  font-family: "Courier";
+  /* font-size: 20px; */
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+  animation: type 4s steps(60, end);
+}
+
+.home h1:nth-child(2) {
+  white-space:nowrap;
+  overflow:hidden;    
+  opacity:0;
+  animation: type2 4s steps(60, end);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* .home h1:nth-child(2) {
+  animation: type 4s steps(60, end);
+} */
+
+@keyframes type{ 
+  from { width: 0 } 
+  to { width: 100% }
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  to { width: 100% }
+  from {opacity:0;}
+  1%{opacity:1;}
+  to{opacity:1;}
+  100%{opacity:1;}
+  }
+
+@media only screen and (max-width : 375px) {
+  .logo{ 
+    font-size: 1em;
+  }
+  .nav-links{
+    font-size: .6em;
+  }
+  .search-button{
+    width: 60px;
+    font-size: 12px;
+    height: 25px;
+  }
+}
+
+
 
 @keyframes App-logo-spin {
   from {
