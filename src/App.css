@@ -19,6 +19,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .App {
@@ -29,6 +30,9 @@ html {
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   min-height: 100vh;
   height: 100%; 
+  display: grid;
+  align-items: center;
+  justify-content: center;
 /*   
   background-size: cover;
   background-position: center;
@@ -136,10 +140,6 @@ nav {
   animation-fill-mode: forwards;
 }
 
-/* .home h1:nth-child(2) {
-  animation: type 4s steps(60, end);
-} */
-
 @keyframes type{ 
   from { width: 0 } 
   to { width: 100% }
@@ -153,6 +153,118 @@ nav {
   to{opacity:1;}
   100%{opacity:1;}
   }
+
+/* ********* About ************** */
+
+.about-container {
+  width: auto;
+  height: auto;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  z-index: 1;
+	background: inherit;
+	overflow: hidden;
+}
+
+.about-container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.about {
+  margin: 30px;
+}
+
+/* ******** Experience *********** */
+
+.experience-container {
+  width: auto;
+  height: auto;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -20%);
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  z-index: 1;
+	background: inherit;
+  overflow: hidden;
+  margin-bottom: 20px;
+  backdrop-filter: blur(30px);
+}
+
+.experience-container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.experience {
+  margin: 30px;
+}
+
+.key-skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.key-skills-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.technical-skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.technical-skills-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.resume-pdf-container {
+  position: relative;
+}
+
+.resume-pdf {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* *********** Extra *********** */
 
 @media only screen and (max-width : 375px) {
   .logo{ 
