@@ -45,9 +45,11 @@ class Contact extends React.Component {
                             <textarea type="textarea" className="contact-message" placeholder="Enter Message..." value={this.state.message} name="message" onChange={this.handleChange} /><br/>
                             <input type="submit" className="contact-button" value="Send Message!"/>
                         </form>
-
-                        <h3>{this.success}</h3>
                     </div>
+                    <a href="https://www.linkedin.com/in/thomas-holmes-64426529/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/tholmes59" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+                    <a href="https://twitter.com/THolmsie" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/tom_holmes59/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         );
