@@ -738,6 +738,35 @@ nav {
   background: #3570dc;
 }
 
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  /* width: 50px; */
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
 @media only screen and (min-width : 280px) {
   .contact-container{ width: 90% }
 }
