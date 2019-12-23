@@ -76,7 +76,7 @@ nav {
 }
 
 .nav-item:hover a {
-  color: darkgreen;
+  color: rgb(107, 8, 8);
 }
 
 
@@ -341,6 +341,7 @@ nav {
   font-family: "Courier";
   margin-top: 20px;
   margin-bottom: 20px;
+  backdrop-filter: blur(30px);
 }
 
 .about-container:before {
