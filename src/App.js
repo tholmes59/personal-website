@@ -7,10 +7,12 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import NavBar from './components/Navbar';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import ScrollUpButton from "react-scroll-up-button";
 
 function App() {
   return (
     <div className="App">
+      <ScrollUpButton />
       <Router>
         <Route>
           <NavBar />
