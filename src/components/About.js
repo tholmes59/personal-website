@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const About = () => {
     return (
@@ -25,6 +26,10 @@ const About = () => {
                     I worked in both finance and product management positions that gave me experience at a global technology company. 
                     Together, these roles developed my ability to collaborate across teams to achieve results, create solutions based on data, understand what customers need, and most importantly, be a good teammate.
                 </p>
+            </div>
+            <div className="about-button-container">
+                <button type="button" to="/experience" className="about-button"><Link className="experience-projects-button" to={`/experience`}>My Background</Link></button>
+                <button type="button" to="/projects" className="about-button"><Link className="experience-projects-button" to={`/projects`}>My Projects</Link></button>
             </div>
         </div>
     );
