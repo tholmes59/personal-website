@@ -279,7 +279,7 @@ nav {
 @keyframes type{ 
   from { width: 0 } 
   to { width: 100% }
-} 
+}
 
 @keyframes type2{
   0%{width: 0;}
@@ -288,6 +288,40 @@ nav {
   1%{opacity:1;}
   to{opacity:1;}
   100%{opacity:1;}
+  }
+
+  .home-about-button {
+    margin-top: 20px;
+    width: 60%;
+    padding: 5px 5px;
+    border: solid 5px rgb(107, 8, 8);
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type3 3s steps(60, end);
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    backdrop-filter: blur(30px);
+  }
+
+  .aboutbutton {
+    font-family: "Courier";
+    color: rgb(107, 8, 8);
+    text-decoration: none;
+    font-size: 35px;
+  }
+
+  @keyframes type3 { 
+    from {width: 60%;}
+    to { width: 60% }
+    from {opacity:0;}
+    1%{opacity:1;}
+    to{opacity:1;}
+    100%{opacity:1;}
   }
 
   @media only screen and (max-width : 1030px) {
@@ -300,6 +334,14 @@ nav {
   @media only screen and (max-width : 415px) {
     .home {
       font-size: .4em;
+    }
+
+    .home-about-button {
+      animation-delay: 10s;
+    }
+
+    .aboutbutton {
+      font-size: 1em;
     }
 
     .home h1:nth-child(2) {
@@ -366,16 +408,67 @@ nav {
   font-size: 1vw;
 }
 
+.about p {
+  line-height: 1.4;
+}
+
+.about-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  padding: 5px 0;
+}
+
+.about-button {
+  width: 17%;
+  padding: 5px 0;
+  border: solid 3px rgb(107, 8, 8);
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.about-button:hover {
+  background: #3570dc;
+  border: #3570dc;
+}
+
+.experience-projects-button {
+  font-family: "Courier";
+  color: rgb(107, 8, 8);
+  text-decoration: none;
+  font-size: 15px;
+}
+
 @media only screen and (max-width : 1030px) {
   .about-container {
     left: 10%;
     right: 10%;
+  }
+
+  .about-button {
+    width: 30%;
+    margin: 0 10px;
   }
 }
 
 @media only screen and (max-width : 415px) {
   .about{
     font-size: .5em;
+  }
+
+  .about-button {
+    width: 30%;
+    margin: 0 10px;
+  }
+
+  .experience-projects-button {
+    font-size: .9em;
   }
 }
 
@@ -418,6 +511,7 @@ nav {
 
 .experience {
   margin: 30px;
+  line-height: 1.4;
 }
 
 .key-skills {
@@ -628,6 +722,7 @@ nav {
 @media only screen and (max-width : 415px) {
   .projects-container {
     grid-template-columns: repeat(1, 300px);
+    /* grid-gap: 0px; */
   }
   .project-title {
     width: 300px;
