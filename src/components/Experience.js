@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Experience = () => {
     return (
@@ -111,6 +112,10 @@ const Experience = () => {
                         <li>Reduced average project idle time 60% from 25 days to 10 days in order to improve time-to-market and time-to-profit for new product designs</li>
                     </ul><br/>
                     
+                </div>
+                    <div className="experience-button-container">
+                    <button type="button" to="/projects" className="experience-button"><Link className="projects-contact-button" to={`/projects`}>My Projects</Link></button>
+                    <button type="button" to="/contact" className="experience-button"><Link className="projects-contact-button" to={`/contact`}>Contact Me</Link></button>
                 </div>
                 <div className="expereince-fa">
                     <a href="https://www.linkedin.com/in/thomas-holmes-64426529/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
