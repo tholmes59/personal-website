@@ -550,6 +550,39 @@ nav {
   color: black;
 }
 
+.experience-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  padding: 5px 0;
+}
+
+.experience-button {
+  width: 17%;
+  padding: 5px 0;
+  border: solid 3px rgb(107, 8, 8);
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.experience-button:hover {
+  background: #3570dc;
+  border: #3570dc;
+}
+
+.projects-contact-button {
+  font-family: "Courier";
+  color: rgb(107, 8, 8);
+  text-decoration: none;
+  font-size: 15px;
+}
+
 .expereince-fa {
   text-align: center;
   margin-bottom: 20px;
@@ -560,20 +593,37 @@ nav {
     left: 5%;
     right: 5%;
   }
+
+  .experience-button {
+    width: 30%;
+    margin: 0 10px;
+  }
 }
 
 @media only screen and (max-width : 415px) {
   .experience{
     font-size: .5em;
   }
+
   .key-skills-column ul {
     padding-inline-start: 10px;
   }
+
   .technical-skills-column ul {
     padding-inline-start: 10px;
   }
+
   .experience ul {
     padding-inline-start: 10px;
+  }
+
+  .experience-button {
+    width: 30%;
+    margin: 0 10px;
+  }
+
+  .projects-contact-button {
+    font-size: .9em;
   }
 }
 
