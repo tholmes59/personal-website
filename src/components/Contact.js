@@ -42,11 +42,11 @@ class Contact extends React.Component {
                         <form onSubmit={this.handleSubmit} >
                             <h2 className="contact-header">Contact Me</h2>
                             <label for="contact-name" className="contact-form-label">name</label>
-                            <input type="text" className="contact-name" placeholder="Enter Name..." value={this.state.name} name="name" onChange={this.handleChange} /><br/>
+                            <input type="text" className="contact-name" placeholder="Enter Name..." value={this.state.name} name="name" onChange={this.handleChange} required /><br/>
                             <label for="contact-email" className="contact-form-label">email</label>
-                            <input type="email" className="contact-email" placeholder="Enter Email..." value={this.state.email} name="email" onChange={this.handleChange} /><br/>
+                            <input type="email" className="contact-email" placeholder="Enter Email..." value={this.state.email} name="email" onChange={this.handleChange} required /><br/>
                             <label for="contact-message" className="contact-form-label">message</label>
-                            <textarea type="textarea" className="contact-message" placeholder="Enter Message..." value={this.state.message} name="message" onChange={this.handleChange} /><br/>
+                            <textarea type="textarea" className="contact-message" placeholder="Enter Message..." value={this.state.message} name="message" onChange={this.handleChange} required /><br/>
                             <input type="submit" className="contact-button" value="Send Message!"/>
                         </form>
                     </div>
