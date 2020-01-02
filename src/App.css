@@ -308,6 +308,11 @@ nav {
     backdrop-filter: blur(30px);
   }
 
+  .home-about-button:hover {
+    background: #3570dc;
+    border: solid 5px #3570dc;
+  }
+
   .aboutbutton {
     font-family: "Courier";
     color: rgb(107, 8, 8);
