@@ -211,6 +211,18 @@ nav {
   }
 }
 
+@media only screen and (max-width: 325px) {
+  nav {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+
+  .nav-item a {
+    padding: 10px 10px;
+  }
+}
+
 /* ********* Home *********** */
 
 .home-container {
@@ -248,9 +260,7 @@ nav {
 }
 
 .home h1 {
-  /* color: Pink;  */
   font-family: "Courier";
-  /* font-size: 2.33vw; */
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -317,7 +327,6 @@ nav {
     font-family: "Courier";
     color: rgb(107, 8, 8);
     text-decoration: none;
-    /* font-size: 35px; */
     font-size: 2vw;
   }
 
@@ -346,7 +355,6 @@ nav {
   @media only screen and (max-width : 415px) {
     .home {
       font-size: .4em;
-      /* font-size: 2.33vw; */
     }
 
     .home-about-button {
@@ -355,7 +363,6 @@ nav {
 
     .aboutbutton {
       font-size: 1em;
-      /* font-size: 2vw; */
     }
 
     .home h1:nth-child(2) {
@@ -363,10 +370,17 @@ nav {
     }
   }
 
-  @media only screen and (max-width : 320px) {
+  @media only screen and (max-width : 325px) {
     .home {
-      /* font-size: .35em; */
-      font-size: 2.33vw;
+      font-size: .35em;
+    }
+
+    .home-about-button {
+      animation-delay: 11.5s;
+    }
+
+    .aboutbutton {
+      font-size: .8em;
     }
 
     .home h1:nth-child(2) {
