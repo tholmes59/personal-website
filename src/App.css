@@ -786,6 +786,29 @@ nav {
   }
 }
 
+@media only screen and (max-width: 825px) and (min-width: 565px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, 525px);
+    /* margin: 10px; */
+  }
+  .project-title {
+    width: 525px;
+    top: 125px;
+    font-size: 32px;
+  }
+  .project-button {
+    width: 525px;
+    top: 184px;
+  }
+  .project-button a {
+    padding: 13px 53px;
+    font-size: 1.5em;
+  }
+  .project-header{
+    width: 40%;
+  }
+}
+
 @media only screen and (max-width : 415px) {
   .projects-container {
     grid-template-columns: repeat(1, 300px);
