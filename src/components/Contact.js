@@ -22,7 +22,7 @@ class Contact extends React.Component {
             .then((result) => {
                 console.log(result.text);
                 console.log(result);
-                alert("Message Sent! I will get back to soon!")
+                alert("Message Sent! I will get back to you soon!")
             }, (error) => {
                 console.log(error.text);
                 alert("Something went wrong. Please try again")
