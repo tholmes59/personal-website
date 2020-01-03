@@ -239,7 +239,8 @@ nav {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   z-index: 1;
 	background: inherit;
-	overflow: hidden;
+  overflow: hidden;
+  backdrop-filter: blur(30px);
 }
 
 .home-container:before {
@@ -347,7 +348,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 815px) and (min-width: 565px) {
+@media only screen and (max-width: 815px) and (min-width: 416px) {
   .home {
     font-size: .6em;
   }
@@ -451,7 +452,7 @@ nav {
 }
 
 .about-button {
-  width: 17%;
+  width: 25%;
   padding: 5px 0;
   border: solid 3px rgb(107, 8, 8);
   z-index: 1;
@@ -494,7 +495,7 @@ nav {
   }
 
   .about{
-    font-size: .6em;
+    font-size: .7em;
   }
 
   .about-button {
@@ -514,8 +515,8 @@ nav {
   height: auto;
   text-align: left;
   position: absolute;
-  left: 25%;
-  right: 25%;
+  left: 20%;
+  right: 20%;
   top: 10%;
   /* transform: translate(-50%, -20%); */
   border: solid 1px black;
