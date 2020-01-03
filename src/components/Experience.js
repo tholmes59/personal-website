@@ -10,7 +10,7 @@ const Experience = () => {
                 </div>
                 <h1>Experience</h1><br/>
                 <h3>SUMMARY</h3>
-                <p>Software engineer with a passion for the frontend development, a love of all things HTML, CSS and JavaScript, strong 
+                <p>Software engineer with a passion for frontend development, a love of all things HTML, CSS and JavaScript, strong 
                     analytical and interpersonal skills, and a background in the technology and financial services industries
                 </p><br/>
                     <h3>KEY SKILLS</h3>
