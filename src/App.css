@@ -212,6 +212,12 @@ nav {
   }
 }
 
+@media only screen and (max-width : 375px) {
+  .nav-links{
+    font-size: .6em;
+  }
+}
+
 @media only screen and (max-width: 325px) {
   nav {
     max-width: 100%;
@@ -1027,7 +1033,7 @@ nav {
 
 /* *********** Extra *********** */
 
-@media only screen and (max-width : 375px) {
+/* @media only screen and (max-width : 375px) {
   .logo{ 
     font-size: 1em;
   }
@@ -1039,7 +1045,7 @@ nav {
     font-size: 12px;
     height: 25px;
   }
-}
+} */
 
 
 
