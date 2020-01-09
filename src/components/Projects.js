@@ -1,9 +1,9 @@
 import React from 'react';
-import celtics from '../assets/celtics-roster.jpg'
-import sinatra from '../assets/sinatra-wine-app.jpg'
-import fitness from '../assets/fitness-app.jpg'
-import fitnessjs from '../assets/fitness-app-js.jpg'
-import recipe from '../assets/recipe-finder.jpg'
+import celtics from '../assets/celtics-roster1.jpg'
+import sinatra from '../assets/sinatra-wine-app1.jpg'
+import fitness from '../assets/fitness-app1.jpg'
+import fitnessjs from '../assets/fitness-app-js1.jpg'
+import recipe from '../assets/recipe-finder1.jpg'
 
 const Projects = () => {
     return (
