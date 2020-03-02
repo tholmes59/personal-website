@@ -12,10 +12,10 @@ const About = () => {
                 <p>
                 My name is Tom Holmes amd I'm a San Francisco based software engineer with passion for frontend development and a love of all things html, 
                     css and javascript! I am an experienced professional with a diverse background in both the technology and financial services industries.
-                    I started by journey over a year ago teaching myself the basics of programming 
+                    I started my journey over a year ago teaching myself the basics of programming 
                     and recently completed the full stack software engineering program with the Flatiron School. 
                     Through the Flatiron School’s online software engineering program I gained a deep and diverse skill set in coding languages and frameworks. 
-                    Over the course of the program I learned how to build appliction with HTML, CSS, JavaScript and React/Redux on the frontend and Ruby, Sinatra, and Rails on the backend. 
+                    Over the course of the program I learned how to build applications with HTML, CSS, JavaScript and React/Redux on the frontend and Ruby, Sinatra, and Rails on the backend. 
                 </p><br/>
                 <p>
                     Along with that skill set, I bring professional experience from my prior career. I previously worked for BlackRock, the world’s largest investment company, 
