@@ -4,12 +4,22 @@ import sinatra from '../assets/sinatra-wine-app1.jpg'
 import fitness from '../assets/fitness-app1.jpg'
 import fitnessjs from '../assets/fitness-app-js1.jpg'
 import recipe from '../assets/recipe-finder1.jpg'
+import nhl from '../assets/NHL2.jpg'
 
 const Projects = () => {
     return (
         <>
         <h1 className="project-header">Project Portfolio</h1>
         <div className="projects-container">
+            <div className="project-item">
+                <img src={nhl} alt="NHL Stats" className="project-item-img"/>
+                <p className="project-title">NHL Stats</p>
+                <div className="project-overlay"></div>
+                <div className="project-button">
+                    <a href="https://github.com/tholmes59/nhl-stats" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://drive.google.com/open?id=15ud9qbVJUunRiPF1m2o7VwuukxIOC6uQ" target="_blank" rel="noopener noreferrer">DEMO</a>
+                </div>
+            </div>
             <div className="project-item">
                 <img src={recipe} alt="recipe finder" className="project-item-img"/>
                 <p className="project-title">Recipe Finder</p>
