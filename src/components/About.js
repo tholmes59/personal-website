@@ -10,10 +10,10 @@ const About = () => {
                     Thank you for checking out my site Dear Reader! 
                 </p><br/>
                 <p>
-                My name is Tom Holmes and I'm a San Francisco based software engineer with passion for frontend development and a love of all things html, 
-                    css and javascript! I am an experienced professional with a diverse background in both the technology and financial services industries.
+                My name is Tom Holmes and I'm a San Francisco based software engineer with passion for frontend development and a love of all things HTML, 
+                    CSS and JavaScript! I am an experienced professional with a diverse background in both the technology and financial services industries.
                     I started my journey over a year ago teaching myself the basics of programming 
-                    and recently completed the full stack software engineering program with the Flatiron School. 
+                    and completed the full stack software engineering program with the Flatiron School. 
                     Through the Flatiron School’s online software engineering program I gained a deep and diverse skill set in coding languages and frameworks. 
                     Over the course of the program I learned how to build applications with HTML, CSS, JavaScript and React/Redux on the frontend and Ruby, Sinatra, and Rails on the backend. 
                 </p><br/>
