@@ -5,6 +5,7 @@ import fitness from '../assets/fitness-app1.jpg'
 import fitnessjs from '../assets/fitness-app-js1.jpg'
 import recipe from '../assets/recipe-finder1.jpg'
 import nhl from '../assets/NHL2.jpg'
+import weather from '../assets/weather-app.jpg'
 
 const Projects = () => {
     return (
@@ -18,6 +19,15 @@ const Projects = () => {
                 <div className="project-button">
                     <a href="https://github.com/tholmes59/nhl-stats" target="_blank" rel="noopener noreferrer">Github</a>
                     <a href="https://drive.google.com/open?id=15ud9qbVJUunRiPF1m2o7VwuukxIOC6uQ" target="_blank" rel="noopener noreferrer">DEMO</a>
+                </div>
+            </div>
+            <div className="project-item">
+                <img src={weather} alt="Weather App" className="project-item-img"/>
+                <p className="project-title">Weather App</p>
+                <div className="project-overlay"></div>
+                <div className="project-button">
+                    <a href="https://github.com/tholmes59/weather-forecast-app" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://drive.google.com/file/d/1Z8Pt9DR2LGHRhhFM8OipCvAaEuBv69IO" target="_blank" rel="noopener noreferrer">DEMO</a>
                 </div>
             </div>
             <div className="project-item">
